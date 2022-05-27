@@ -1,11 +1,16 @@
 {
-	"extends": "tsconfig-gluons/browser",
-	"compilerOptions": {
-		"module": "ESNext",
-		"experimentalDecorators": true,
-		"outDir": "dist"
-	},
-	"include": [
-		"src"
-	]
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+
+  "references": [
+    {
+      "path": "./tsconfig.vite-config.json"
+    }
+  ]
 }

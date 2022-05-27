@@ -160,3 +160,22 @@ dev-dist/
 
 # rollup-plugin-typescript2 cache
 .rpt2_cache/
+
+pnpm-debug.log*
+.DS_Store
+
+dist-ssr
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

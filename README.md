@@ -1,6 +1,6 @@
-# Vue GitHub Corners
+# Vue3 GitHub Corners
 [![license](https://img.shields.io/github/license/gluons/vue-gh-corners.svg?style=flat-square)](./LICENSE)
-[![vue 2](https://img.shields.io/badge/vue-2-42b983.svg?style=flat-square)](https://vuejs.org)
+[![vue 3](https://img.shields.io/badge/vue-3-42b983.svg?style=flat-square)](https://vuejs.org)
 [![npm](https://img.shields.io/npm/v/vue-gh-corners.svg?style=flat-square)](https://www.npmjs.com/package/vue-gh-corners)
 [![npm](https://img.shields.io/npm/dt/vue-gh-corners.svg?style=flat-square)](https://www.npmjs.com/package/vue-gh-corners)
 [![Travis](https://img.shields.io/travis/gluons/vue-gh-corners.svg?style=flat-square)](https://travis-ci.org/gluons/vue-gh-corners)
@@ -16,13 +16,13 @@ Via [npm](https://www.npmjs.com/):
 [![npm](https://nodei.co/npm/vue-gh-corners.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/vue-gh-corners)
 
 ```sh
-npm install --save vue-gh-corners
+npm install --save vue3-gh-corners
 ```
 
 Via [Yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add vue-gh-corners
+yarn add vue3-gh-corners
 ```
 
 ## Demo
@@ -33,12 +33,16 @@ Go to https://gluons.github.io/vue-gh-corners/
 
 ```javascript
 import Vue from 'vue';
-import VueGitHubCorners from 'vue-gh-corners';
+import GitHubCorners from 'vue3-gh-corners';
 
 // Import GitHub Corners stylesheet.
-import 'vue-gh-corners/dist/vue-github-corners.iife.css';
+import 'vue3-gh-corners/dist/vue-github-corners.iife.css';
 
-Vue.use(VueGitHubCorners);
+export default {
+  components: {
+    'github-corners': GitHubCorners,
+  },
+};
 ```
 
 ```vue
